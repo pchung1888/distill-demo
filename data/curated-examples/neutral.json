@@ -1,0 +1,65 @@
+{
+    "doc": {
+        "source_type": "url",
+        "source_ref": "https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat",
+        "title": "Domestic cat",
+        "summary": "A mock summary of the source document produced for tests.",
+        "key_points": [
+            "First canned key point.",
+            "Second canned key point.",
+            "Third canned key point."
+        ],
+        "entities": [
+            {
+                "name": "Mock Corp",
+                "type": "organization",
+                "mentions": 3
+            },
+            {
+                "name": "Jane Example",
+                "type": "person",
+                "mentions": 1
+            }
+        ],
+        "topics": [
+            "testing",
+            "mock-data"
+        ],
+        "critic": {
+            "confidence": 0.95,
+            "faithful": true,
+            "issues": [],
+            "missing_points": []
+        },
+        "created_at": "2026-07-04T20:10:20.823150Z",
+        "fetched_at": "2026-07-04T20:10:20.821151Z",
+        "meta": {
+            "source_meta": {
+                "domain": "www.nationalgeographic.com"
+            }
+        }
+    },
+    "trace": {
+        "stages": [
+            {
+                "name": "extract",
+                "tokens_in": 1665,
+                "tokens_out": 85,
+                "cost_usd": 0.0,
+                "latency_ms": 0
+            },
+            {
+                "name": "critic",
+                "tokens_in": 1524,
+                "tokens_out": 18,
+                "cost_usd": 0.0,
+                "latency_ms": 0
+            }
+        ],
+        "total_tokens_in": 3189,
+        "total_tokens_out": 103,
+        "total_cost_usd": 0.0,
+        "total_latency_ms": 0
+    },
+    "markdown": "---\nsource: \"https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat\"\ntype: url\ntitle: \"Domestic cat\"\ntopics: [\"testing\", \"mock-data\"]\nconfidence: 0.95\ncreated: 2026-07-04T20:10:20.823150+00:00\n---\n\n# Domestic cat\n\n## Summary\n\nA mock summary of the source document produced for tests.\n\n## Key Points\n\n- First canned key point.\n- Second canned key point.\n- Third canned key point.\n\n## Entities\n\n- Mock Corp [organization] (3 mentions)\n- Jane Example [person] (1 mentions)\n"
+}
