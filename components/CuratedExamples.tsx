@@ -13,14 +13,14 @@ export function CuratedExamples() {
       <div>
         <h2 className="text-xl font-semibold">Curated examples</h2>
         <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-          Shown instantly from saved JSON -- no live API call. These were captured with{" "}
+          Real captured runs, shown instantly from saved JSON -- no live API call on page load.
+          Each was produced by distill with{" "}
           <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-800">
-            DISTILL_PROVIDER=mock
+            DISTILL_PROVIDER=gemini
           </code>{" "}
-          against real public URLs, so source fetching/parsing is real but the summary, key
-          points, entities, and critic verdict are the mock provider&apos;s canned placeholder
-          text -- not real LLM output. They will be regenerated once a live provider key is
-          funded.
+          against the public source shown, so the summary, key points, entities, and critic
+          verdict are genuine Gemini output and the trace shows the real metered cost. Want a
+          live run on your own source? Use &quot;Try your own&quot; below.
         </p>
       </div>
 

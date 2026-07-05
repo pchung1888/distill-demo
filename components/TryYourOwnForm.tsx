@@ -5,12 +5,15 @@ import { ingest, type IngestResult } from "@/lib/distill-client";
 import type { SourceType } from "@/lib/types";
 import { ResultView } from "./ResultView";
 
-const PROVIDERS = ["mock", "gemini", "openai", "anthropic", "ollama"] as const;
+// gemini/openai are the funded live providers; mock stays available for a
+// zero-cost look at the pipeline shape. Default to a real provider so a
+// visitor sees genuine LLM output, not canned mock text.
+const PROVIDERS = ["gemini", "openai", "mock"] as const;
 
 export function TryYourOwnForm() {
   const [sourceType, setSourceType] = useState<SourceType>("url");
   const [value, setValue] = useState("");
-  const [provider, setProvider] = useState<(typeof PROVIDERS)[number]>("mock");
+  const [provider, setProvider] = useState<(typeof PROVIDERS)[number]>("gemini");
   const [pending, setPending] = useState(false);
   const [result, setResult] = useState<IngestResult | null>(null);
 
